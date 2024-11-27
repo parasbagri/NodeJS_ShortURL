@@ -7,12 +7,12 @@ const urlSchema = new Schema(
   {
     redirectURL: {
       type: String,
-      // required: true,
+      required: true,
       unique: true,
     },
     shortURL: {
       type: String,
-      // required: true,
+      required: true,
       unique: true,
     },
     // totalClicks: {
@@ -22,7 +22,7 @@ const urlSchema = new Schema(
     // },
     visitHistory: [
       {
-        timestamp: { type: { type: Number } },
+        timestamp: { type: Number },
       },
     ],
   },
